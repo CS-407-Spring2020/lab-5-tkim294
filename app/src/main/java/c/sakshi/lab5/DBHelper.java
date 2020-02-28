@@ -52,6 +52,6 @@ public class DBHelper {
 
     public void updateNote(String title, String date, String content) {
         createTable();
-        sqLiteDatabase.execSQL(String.format("UPDATE notes set content = '%s', date = '%s' where title = '%s'", content, date, title));
+        sqLiteDatabase.execSQL(String.format("UPDATE notes set content = '%s', date = '%s' where title = '%s' AND username ='%s'", content, date, title));
     }
 }
