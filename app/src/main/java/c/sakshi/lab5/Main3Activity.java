@@ -42,7 +42,7 @@ public class Main3Activity extends AppCompatActivity {
             dbHelper.saveNotes(username, title, content, date);
         } else {
             title = "NOTE_" + (noteid + 1);
-            dbHelper.updateNote(title, date, content);
+            dbHelper.updateNote(title, date, content, username);
         }
     }
 

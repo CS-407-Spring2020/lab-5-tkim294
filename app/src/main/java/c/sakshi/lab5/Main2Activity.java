@@ -80,10 +80,9 @@ public class Main2Activity extends AppCompatActivity {
                 return true;
 
             case R.id.item1:
-                Intent intent = new Intent(this, MainActivity.class);
                 SharedPreferences sharedPreferences = getSharedPreferences("c.sakshi.lab5", Context.MODE_PRIVATE);
                 sharedPreferences.edit().remove(MainActivity.usernameKey).apply();
-                startActivity(intent);
+                finish();
                 return true;
 
 
